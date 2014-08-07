@@ -1,0 +1,140 @@
+﻿{% extends "app/base.html" %}
+
+{% block content %}
+
+    <!-- begin:header -->
+    <section id="header" class="heading" style="background: url({{ STATIC_URL }}app/img/img05.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="title-desc">
+                        <h2>Dougs RV</h2>
+                        <p>Omaha, Nebraska  |  5 People   |  6 years old</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end:header -->
+
+    <!-- begin:content -->
+    <section id="content">
+      <div class="container">
+        <div class="row">
+            <!-- begin:article -->
+            <div class="col-md-8 col-sm-8">
+                <div class="row">
+                    <div class="col-md-12 post-single">
+                        <div class="heading-title">
+                            <h2><a href="single.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</a></h2>
+                        </div>
+                        <div class="post-meta">
+                            <span><em>By <a href="#">tarjono</a></em></span>
+                            <span><em>On May 04, 2014</em></span>
+                            <span><em>In <a href="#">Love life</a></em></span>
+                        </div>
+                        <img src="{{ STATIC_URL }}app/img/img03.jpg" alt="danish magazine template">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4">
+                                <img src="{{ STATIC_URL }}app/img/img01.jpg" alt="danish magazine template">
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <img src="{{ STATIC_URL }}app/img/img02.jpg" alt="danish magazine template">
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <img src="{{ STATIC_URL }}app/img/img04.jpg" alt="danish magazine template">
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end:article -->
+
+            <!-- begin:sidebar -->
+            <div class="col-md-4 col-sm-4 sidebar">
+
+                <div class="widget-sidebar default_widget">
+                  <h3>Overview</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in.</p>
+                </div>
+
+                <div class="widget-sidebar widget_categories">
+                  <h3>What We Have Done</h3>
+                  <ul>
+                    <li><i class="fa fa-check-square-o"></i> adsf</li>
+                    <li><i class="fa fa-check-square-o"></i> Lorem</li>
+                    <li><i class="fa fa-check-square-o"></i> Lorem ipsum dolor</li>
+                    <li><i class="fa fa-check-square-o"></i> Lorem sit</li>
+                    <li><i class="fa fa-check-square-o"></i> Lorem dolor sit</li>
+                  </ul>
+                </div>
+
+                <div class="widget-sidebar widget_categories">
+                  <h3>Credits</h3>
+                  <ul>
+                    <li><a href="#">Lorem dolor sit</a></li>
+                    <li><a href="#">Lorem</a></li>
+                    <li><a href="#">Lorem ipsum dolor</a></li>
+                    <li><a href="#">Lorem sit</a></li>
+                    <li><a href="#">Lorem dolor sit</a></li>
+                  </ul>
+                </div>
+
+                <a href="#" class="btn btn-lg btn-info">RENT IT!</a>
+                
+            </div>
+            <!-- end:sidebar -->
+
+        </div>
+      </div>
+    </section>
+    <!-- end:content -->
+
+    <!-- begin:featured -->
+    <div id="featured">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center padit"><h3>Similar Rentals</h3></div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="featured-container">
+                        <div class="featured-img" style="background: url({{ STATIC_URL }}app/img/img03.jpg);">
+                            <h3><a href="#">$55 a day / 5 people </a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="featured-container">
+                        <div class="featured-img" style="background: url({{ STATIC_URL }}app/img/img04.jpg);">
+                            <h3><a href="#">$85 a day / 7 people</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="featured-container">
+                        <a href="#">
+                        <div class="featured-img" style="background: url({{ STATIC_URL }}app/img/img05.jpg);">
+                            <h3>$35 a day / 3 people</h3>
+                        </div>
+                            </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center padit"><a class="btn btn-lg">See More</a></div>
+
+        </div>
+    </div>
+    <!-- end:featured -->
+
+
+   {% endblock %}

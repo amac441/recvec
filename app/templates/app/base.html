@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="{{ STATIC_URL }}app/img/favicon.png">
+
+    <title>ouRV</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ STATIC_URL }}app/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Noto+Serif:700,400italic' rel='stylesheet' type='text/css'>
+    <link href="{{ STATIC_URL }}app/css/font-awesome.min.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}app/css/style.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}app/css/responsive.css" rel="stylesheet">
+
+  </head>
+
+<body>
+    <!-- begin:navbar -->
+    <nav class="navbar navbar-default navbar-transparent navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-top">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"><i class="fa fa-dashboard"></i> ou<span>r-v</span></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-top">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="/how-it-works">About</a></li>
+                    <li><a href="/search">Search</a></li>
+                    <li><a href="/post">Post</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/blog">Profile</a></li>
+                   
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+
+
+
+    {% block content %}
+    {% endblock %}
+
+
+
+
+    <!-- begin:footer -->
+    <section id="footer" style="background-image: url({{ STATIC_URL }}app/img/Campfire.jpg);">
+        <div class="transparent">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3">
+                        <div class="widget">
+                            <h3>Recent Post</h3>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Lorem ipsum</a></li>
+                                <li><a href="#">Lorem</a></li>
+                                <li><a href="#">Lorem ipsum dolor</a></li>
+                                <li><a href="#">Lorem sit</a></li>
+                                <li><a href="#">Lorem dolor sit</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <div class="widget">
+                            <h3>Useful Links</h3>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Lorem sit</a></li>
+                                <li><a href="#">Lorem dolor sit</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-5">
+                        <div class="footer-logo">
+                            <h2><i class="fa fa-dashboard"></i> ou<b>r-v</b></h2>
+                            <p>1024 Main Street, Omaha, NE<br>+62 (123) 456-7890</p>
+                            <br>
+                            <p class="muted">© 2014 HollidayRoadTrips, Inc.</p>
+                            <a href="#">Terms of Service</a>
+                            <a href="#">Privacy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end:footer -->
+    <!-- begin:copyright -->
+    <section id="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 copy-left">
+                    <p>Copyright &copy; 2014 <strong>our-v</strong>. All Right Reserved.</p>
+                </div>
+
+                <div class="col-md-6 col-sm-6 copy-right">
+                    <ul class="list-inline social-icon">
+                        <li><a href="#" class="icon-twitter" rel="tooltip" title="" data-placement="top" data-original-title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" class="icon-facebook" rel="tooltip" title="" data-placement="top" data-original-title="Facebook"><i class="fa fa-facebook-square"></i></a></li>
+                        <li><a href="#" class="icon-youtube" rel="tooltip" title="" data-placement="top" data-original-title="Youtube"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="#" class="icon-instagram" rel="tooltip" title="" data-placement="top" data-original-title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end:copyrigt -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{{ STATIC_URL }}app/js/jquery.js"></script>
+    <script src="{{ STATIC_URL }}app/js/bootstrap.js"></script>
+    <script src="{{ STATIC_URL }}app/js/masonry.pkgd.min.js"></script>
+    <script src="{{ STATIC_URL }}app/js/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script>
+    <script src="{{ STATIC_URL }}app/js/gmap3.min.js"></script>
+    <script src="{{ STATIC_URL }}app/js/jquery.isotope.min.js"></script>
+    <script src="{{ STATIC_URL }}app/js/jquery.easing.js"></script>
+    <script src="{{ STATIC_URL }}app/js/script.js"></script>
+
+</body>
+</html>

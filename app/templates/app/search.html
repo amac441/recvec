@@ -1,0 +1,189 @@
+﻿{% extends "app/base.html" %}
+
+{% block content %}
+
+
+    <!-- begin:header -->
+    <section id="header" class="backit heading">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="title-desc">
+                        <h2>Search for Recreational Vehicle Rentals</h2>
+
+                        {% include "app/searchbox.html" %}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end:header -->
+
+
+    <!-- begin:portfolio -->
+    <section id="portfolio" class="portfolio-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="nav nav-pills portfolio-sort">
+                      <li class="active" data-filter="*"><a href="#">All</a></li>
+                      <li data-filter=".bag"><a href="#">Luxury</a></li>
+                      <li data-filter=".shoes"><a href="#">Economy</a></li>
+                      <li data-filter=".shirt"><a href="#">Large</a></li>
+                      <li data-filter=".dress"><a href="#">Gas Mileage</a></li>
+                    </ul>
+
+                    <ul class="list-unstyled container-portfolio wrapper-portfolio">
+                        <li class="bag dress">
+                            <div class="portfolio-item">
+                                <div class="portfolio-img" style="background: url({{ STATIC_URL }}app/img/img01.jpg);"></div>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-text">
+                                        <h3>Portfolio Title /</h3>
+                                        <p>Short Description About Portfolio Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus.</p>
+                                        <a href="/listing" class="btn btn-info">View &raquo;</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="shoes shirt">
+                            <div class="portfolio-item">
+                                <div class="portfolio-img" style="background: url({{ STATIC_URL }}app/img/img02.jpg);"></div>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-text">
+                                        <h3>Portfolio Title /</h3>
+                                        <p>Short Description About Portfolio Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus.</p>
+                                        <a href="portfolio-single.html" class="btn btn-info">View &raquo;</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dress">
+                            <div class="portfolio-item">
+                                <div class="portfolio-img" style="background: url({{ STATIC_URL }}app/img/img03.jpg);"></div>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-text">
+                                        <h3>Portfolio Title /</h3>
+                                        <p>Short Description About Portfolio Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus.</p>
+                                        <a href="portfolio-single.html" class="btn btn-info">View &raquo;</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="shirt bag">
+                            <div class="portfolio-item">
+                                <div class="portfolio-img" style="background: url({{ STATIC_URL }}app/img/img04.jpg);"></div>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-text">
+                                        <h3>Portfolio Title /</h3>
+                                        <p>Short Description About Portfolio Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus.</p>
+                                        <a href="portfolio-single.html" class="btn btn-info">View &raquo;</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="bag dress shirt">
+                            <div class="portfolio-item">
+                                <div class="portfolio-img" style="background: url({{ STATIC_URL }}app/img/img05.jpg);"></div>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-text">
+                                        <h3>Portfolio Title /</h3>
+                                        <p>Short Description About Portfolio Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus.</p>
+                                        <a href="portfolio-single.html" class="btn btn-info">View &raquo;</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="shoes">
+                            <div class="portfolio-item">
+                                <div class="portfolio-img" style="background: url({{ STATIC_URL }}app/img/img04.jpg);"></div>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-text">
+                                        <h3>Portfolio Title /</h3>
+                                        <p>Short Description About Portfolio Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus.</p>
+                                        <a href="portfolio-single.html" class="btn btn-info">View &raquo;</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dress">
+                            <div class="portfolio-item">
+                                <div class="portfolio-img" style="background: url({{ STATIC_URL }}app/img/img01.jpg);"></div>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-text">
+                                        <h3>Portfolio Title /</h3>
+                                        <p>Short Description About Portfolio Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus.</p>
+                                        <a href="portfolio-single.html" class="btn btn-info">View &raquo;</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dress shoes">
+                            <div class="portfolio-item">
+                                <div class="portfolio-img" style="background: url({{ STATIC_URL }}app/img/img02.jpg);"></div>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-text">
+                                        <h3>Portfolio Title /</h3>
+                                        <p>Short Description About Portfolio Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus.</p>
+                                        <a href="portfolio-single.html" class="btn btn-info">View &raquo;</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="shirt">
+                            <div class="portfolio-item">
+                                <div class="portfolio-img" style="background: url({{ STATIC_URL }}app/img/img01.jpg);"></div>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-text">
+                                        <h3>Portfolio Title /</h3>
+                                        <p>Short Description About Portfolio Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus.</p>
+                                        <a href="portfolio-single.html" class="btn btn-info">View &raquo;</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="bag shirt">
+                            <div class="portfolio-item">
+                                <div class="portfolio-img" style="background: url({{ STATIC_URL }}app/img/img02.jpg);"></div>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-text">
+                                        <h3>Portfolio Title /</h3>
+                                        <p>Short Description About Portfolio Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus.</p>
+                                        <a href="portfolio-single.html" class="btn btn-info">View &raquo;</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dress">
+                            <div class="portfolio-item">
+                                <div class="portfolio-img" style="background: url({{ STATIC_URL }}app/img/img03.jpg);"></div>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-text">
+                                        <h3>Portfolio Title /</h3>
+                                        <p>Short Description About Portfolio Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus.</p>
+                                        <a href="portfolio-single.html" class="btn btn-info">View &raquo;</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="shirt shoes">
+                            <div class="portfolio-item">
+                                <div class="portfolio-img" style="background: url({{ STATIC_URL }}app/img/img04.jpg);"></div>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-text">
+                                        <h3>Portfolio Title /</h3>
+                                        <p>Short Description About Portfolio Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis lectus metus.</p>
+                                        <a href="portfolio-single.html" class="btn btn-info">View &raquo;</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end:portfolio -->
+
+{% endblock %}

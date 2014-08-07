@@ -1,0 +1,243 @@
+﻿{% extends "app/base.html" %}
+
+{% block content %}
+
+    <!-- begin:header -->
+    <section id="header" class="heading" style="background: url({{ STATIC_URL }}app/img/img02.jpg); margin-top: -25px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="title-desc">
+                        <h2>Post Your RV</h2>
+                        <p>In just a few simple steps, you will be swimming in green.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end:header -->
+
+    <!-- begin:content -->
+    <section id="content">
+
+    <div class="container">
+
+        <h3 class="text-center">It takes just 4 simple steps!</h3>
+
+        <hr />
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                    <span class="glyphicon glyphicon-file">
+                                    </span>1.  INPUT YOUR INFORMATION
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Title" required />
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea class="form-control" placeholder="Content" rows="5" required></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="category">
+                                                Category
+                                            </label>
+                                            <select class="form-control" id="category">
+                                                <option>Articles</option>
+                                                <option>Tutorials</option>
+                                                <option>Freebies</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="tags">
+                                                Tags
+                                            </label>
+                                            <input type="text" class="form-control" id="tags" placeholder="Tags" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="well well-sm">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">www.jquery2dotnet.com/</span>
+                                                <input type="text" class="form-control" placeholder="Custom url" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="well well-sm well-primary">
+                                            <form class="form form-inline " role="form">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" value="" placeholder="Date" required />
+                                                </div>
+                                                <div class="form-group">
+                                                    <select class="form-control">
+                                                        <option>Draft</option>
+                                                        <option>Published</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <button type="submit" class="btn btn-success btn-sm">
+                                                        <span class="glyphicon glyphicon-floppy-disk"></span>Save
+                                                    </button>
+                                                    <button type="button" class="btn btn-default btn-sm">
+                                                        <span class="glyphicon glyphicon-eye-open"></span>Preview
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                    <span class="glyphicon glyphicon-th-list">
+                                    </span>2. INPUT CAR DETAILS
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Title" required />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Description" required />
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea class="form-control" placeholder="Keywords" required></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="well well-sm well-primary">
+                                            <form class="form form-inline " role="form">
+                                                <div class="form-group">
+                                                    <a href="http://www.jquery2dotnet.com" class="btn btn-success btn-sm">
+                                                        <span class="glyphicon glyphicon-floppy-disk">
+                                                        </span>Save
+                                                    </a>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                    <span class="glyphicon glyphicon-th-list">
+                                    </span>2. INPUT CAR AVAILABILITY
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Title" required />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Description" required />
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea class="form-control" placeholder="Keywords" required></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="well well-sm well-primary">
+                                            <form class="form form-inline " role="form">
+                                                <div class="form-group">
+                                                    <a href="http://www.jquery2dotnet.com" class="btn btn-success btn-sm">
+                                                        <span class="glyphicon glyphicon-floppy-disk">
+                                                        </span>Save
+                                                    </a>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                    <span class="glyphicon glyphicon-th-list">
+                                    </span>4. VERIFY YOUR IDENTITY AND SUBMIT
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Title" required />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Description" required />
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea class="form-control" placeholder="Keywords" required></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="well well-sm well-primary">
+                                            <form class="form form-inline " role="form">
+                                                <div class="form-group">
+                                                    <a href="http://www.jquery2dotnet.com" class="btn btn-success btn-sm">
+                                                        <span class="glyphicon glyphicon-floppy-disk">
+                                                        </span>Save
+                                                    </a>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+    <!-- end:content -->
+
+{% endblock %}
